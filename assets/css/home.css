@@ -14,19 +14,70 @@ body{
 header{
     text-align: center;
     padding-bottom: 25px;
-    border-bottom: 5px solid #339933;
+    /* border-bottom: 5px solid #339933; */
 }
 header h1{
     font-size: 25px;
     font-weight: bold;
     color: #003399;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 /* main */
 .main{
-    margin: 20px;
+    margin: 30px;
 }
-
+.col-md-4{
+    width: 31%;
+    margin-right: 3.5%;
+    padding: 20px 25px;
+}
+.receiver{
+    margin-right: 0%;
+}
+.create-key{
+    background: #FF9999;
+}
+.sender, .receiver{
+    background: #99FF66; 
+}
+.title-col{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.title-col img{
+    width: 25px;
+    height: 25px;
+}
+.btn-info{
+    padding: 5px 5px 0px 5px;
+    float: right;
+    margin-bottom: 10px;
+}
+.form-group label {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.btn-create{
+    text-align: center;
+}
+.btn-success img{
+    width: 25px;
+    height: 25px;
+}
+.custom-file{
+    margin-bottom: 15px;
+}
+.custom-file label{
+    margin-bottom: 10px;
+}
+.sha{
+    margin-bottom: 15px;
+}
+.choose-size{
+    margin-bottom: 40px;
+}
 /* footer */
 .copyright{
     background: #333333; 

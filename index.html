@@ -19,47 +19,78 @@
         <div class="main container-fluid">
             <div class="row">
                 <div class="col-md-4 create-key">
+                    <div class="title-col">
+                        <img src="assets/image/key_start.png" alt=""> CREATE KEY
+                    </div>
+                    <div class="form-group choose-size">
+                        <label for="">Size of key </label>
                         <select name="lengthKey" id="lengthKey">
                             <option value="256">256</option>
                             <option value="1024">1024</option>
                             <option value="2056">2056</option>
                             <option value="3072">3072</option>
                         </select>
+                    </div>
+                    <div class="form-group">
                         <Label>Private Key</Label>
-                        <textarea name="private-key" id="private-key" cols="20" rows="5" class="form-control">
-    
-                        </textarea>
+                        <button class="btn btn-info"><img src="assets/image/disk_black.png" alt=""></button>
+                        <textarea name="private-key" id="private-key" cols="20" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
                         <Label>Public Key</Label>
+                        <button class="btn btn-info"><img src="assets/image/disk_black.png" alt=""></button>
                         <textarea name="public-key" id="public-key" cols="20" rows="5" class="form-control">
-    
                         </textarea>
+                    </div>
+                    <div class="btn-create">
+                        <button class="btn btn-success"><img src="assets/image/vcard_key.png" alt=""><span> Create new key</span></button>
+                    </div>
                 </div>
                 <div class="col-md-4 sender">
+                    <div class="title-col">
+                        <img src="assets/image/user_star.png" alt=""> CREATE KEY
+                    </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text">Send</span>
-                        </div>
                         <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            <label>Choose your file</label>
+                            <input type="file" class="custom-file-input" id="inputGroupFile01">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="">SHA HASH</label>
+                        <label class="sha">SHA1 - HASH</label>
                         <textarea name="sha-hash1" id="sha-hash1" cols="20" rows="5" class="form-control"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="">Tạo chữ kí</label>
+                        <label for="">Signature created</label>
+                        <button class="btn btn-info"><img src="assets/image/disk_black.png" alt=""></button>
                         <textarea name="sha-hash2" id="sha-hash2" cols="20" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="btn-create">
+                        <button class="btn btn-success"><img src="assets/image/shield_start.png" alt=""><span> Create Signature</span></button>
                     </div>
                 </div>
                 <div class="col-md-4 receiver">
-                    <label for="">Choose your file send</label>
-                    <input type="file" name="file-sender" id="file-sender" class="form-control">
-                    <label for="">SHA HASH Receiver</label>
-                    <textarea name="sha-receiver" id="sha-receiver" rows="5" class="form-control"></textarea>
-                    <label for="">Giải mã chữ kí</label>
-                    <textarea name="sha-hash3" id="sha-hash3" rows="5" class="form-control"></textarea>
+                    <div class="title-col">
+                        <img src="assets/image/user_mature.png" alt=""> RECEIVER
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <label>Choose your file</label>
+                            <input type="file" name="file-sender" id="file-sender" class=" custom-file-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sha">SHA1 - HASH</label>
+                        <textarea name="sha-receiver" id="sha-receiver" cols="20" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Signature Decoded</label>
+                        <button class="btn btn-info"><img src="assets/image/disk_black.png" alt=""></button>
+                        <textarea name="sha-hash3" id="sha-hash3" cols="20" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="btn-create">
+                        <button class="btn btn-success"><img src="assets/image/shield_rainbow.png" alt=""><span> Check</span></button>
+                    </div>
                 </div>
             </div>
         </div>
