@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Signature</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+    <div class="body">
+        <div class="row">
+            <div class="col-md-4 create-key">
+                 <select name="lengthKey" id="lengthKey">
+                     <option value="256">256</option>
+                     <option value="1024">1024</option>
+                     <option value="2056">2056</option>
+                     <option value="3072">3072</option>
+                 </select>
+                 <Label>Private Key</Label>
+                 <textarea name="private-key" id="private-key" cols="20" rows="5">
+
+                 </textarea>
+                 <Label>Public Key</Label>
+                 <textarea name="public-key" id="public-key" cols="20" rows="5">
+
+                 </textarea>
+            </div>
+            <div class="col-md-4 sender">
+                <div class="form-group">
+                    <label for="">Choose your file send</label>
+                    <input type="file" name="file-sender" id="file-sender">
+                </div>
+                <div class="form-group">
+                    <label for="">SHA HASH</label>
+                    <textarea name="sha-hash1" id="sha-hash1" cols="20" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Tạo chữ kí</label>
+                    <textarea name="sha-hash2" id="sha-hash2" cols="20" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4 receiver">
+                <label for="">Choose your file send</label>
+                <input type="file" name="file-sender" id="file-sender">
+                <label for="">SHA HASH Receiver</label>
+                <textarea name="sha-receiver" id="sha-receiver" cols="20" rows="5"></textarea>
+                <label for="">Giải mã chữ kí</label>
+                <textarea name="sha-hash3" id="sha-hash3" cols="20" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <!-- <script src=""></script> -->
+</body>
+</html>
